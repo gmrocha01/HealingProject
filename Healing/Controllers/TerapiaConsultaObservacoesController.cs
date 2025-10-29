@@ -21,10 +21,11 @@ namespace Healing.Controllers
 
         public List<TerapiaConsultaObservacoes> GetAllByTerapiaConsultaId(int id)
         {
+            //Teste
             List<string> param = new List<string>();
             param.Add($"terapias_consultas_id = '{id}'");
 
-            return repository.Select(param);
+            return repository.Select(param);            
         }
     }
 }
