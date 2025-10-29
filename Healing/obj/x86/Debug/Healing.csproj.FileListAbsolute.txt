@@ -1,0 +1,11 @@
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.csproj.AssemblyReference.cache
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.csproj.CoreCompileInputs.cache
+C:\FontesCSharp\HealingProject\Healing\bin\Debug\Healing.exe
+C:\FontesCSharp\HealingProject\Healing\bin\Debug\Healing.pdb
+C:\FontesCSharp\HealingProject\Healing\bin\Debug\MySql.Data.dll
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.csproj.Up2Date
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.exe
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.pdb
+C:\FontesCSharp\HealingProject\Healing\bin\Debug\Healing.exe.config
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.Views.MainForm.resources
+C:\FontesCSharp\HealingProject\Healing\obj\x86\Debug\Healing.csproj.GenerateResource.cache
