@@ -9,5 +9,10 @@ namespace Healing.Models
         public DateTime DataConsulta { get; set; }
         public string TipoTerapia { get; set; }
         public string Observacoes { get; set; }
+        public string Status { get; set; }
+        public string PessoaNome { get; set; }
+        public string PessoaTelefone { get; set; }
+        public string PessoaIdade { get; set; }
+        public string PessoaCpfCnpj { get; set; }
     }
 }

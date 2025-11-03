@@ -38,6 +38,11 @@
     <Compile Include="Models\\Usuario.cs" />
     <Compile Include="Models\\Pessoa.cs" />
     <Compile Include="Models\\TerapiaConsulta.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\BaseClass.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\RepositoryAbs.cs" />
@@ -47,11 +52,23 @@
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Tools\PrepararDadosPBanco.cs" />
     <Compile Include="Tools\UtilV2.cs" />
-    <Compile Include="Views\\LoginForm.cs">
+    <Compile Include="Views\formListarTerapias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\\MainForm.cs">
+    <Compile Include="Views\formListarTerapias.Designer.cs">
+      <DependentUpon>formListarTerapias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formPrincipal.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\\TerapiasListForm.cs">
       <SubType>Form</SubType>
@@ -67,9 +84,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\formListarTerapias.resx">
+      <DependentUpon>formListarTerapias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TerapiasListForm.resx">
+      <DependentUpon>TerapiasListForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_healing.png" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>bin\Debug\</OutputPath>

@@ -64,7 +64,12 @@ namespace Healing.Repositories
                 registro.IdPessoa = dt.Rows[i]["id_pessoa"].ToString().GetInteiro();
                 registro.DataConsulta = dt.Rows[i]["data_consulta"].ToString().GetData();
                 registro.TipoTerapia = dt.Rows[i]["tipo_terapia"].ToString();
-                registro.Observacoes = dt.Rows[i]["observacoes"].ToString();
+                registro.Observacoes = dt.Rows[i]["observacoes"].ToString(); 
+                registro.Status = dt.Rows[i]["status"].ToString();
+                registro.PessoaNome = dt.Rows[i]["pessoa_nome"].ToString();
+                registro.PessoaTelefone = dt.Rows[i]["pessoa_telefone"].ToString();
+                registro.PessoaIdade = dt.Rows[i]["pessoa_idade"].ToString();
+                registro.PessoaCpfCnpj = dt.Rows[i]["pessoa_cpf_cnpj"].ToString();
                 listaObjeto.Add(registro);
             }
 
@@ -110,11 +115,21 @@ namespace Healing.Repositories
             .AppendLine("id_pessoa , ")
             .AppendLine("data_consulta , ")
             .AppendLine("tipo_terapia , ")
-            .AppendLine("observacoes  ) VALUES(").AppendLine(" '" + obj.Id + "' ,  ")
+            .AppendLine("observacoes, ")
+            .AppendLine("status , ")
+            .AppendLine("pessoa_nome , ")
+            .AppendLine("pessoa_telefone , ")
+            .AppendLine("pessoa_idade , ")
+            .AppendLine("pessoa_cpf_cnpj  ) VALUES(").AppendLine(" '" + obj.Id + "' ,  ")
             .AppendLine(" '" + obj.IdPessoa + "' ,  ")
             .AppendLine(" '" + obj.DataConsulta.GetFormatDateTime() + "' ,  ")
             .AppendLine(" '" + obj.TipoTerapia + "' ,  ")
-            .AppendLine(" '" + obj.Observacoes + "' )");
+            .AppendLine(" '" + obj.Observacoes + "' ,  ")
+            .AppendLine(" '" + obj.Status + "' ,  ")
+            .AppendLine(" '" + obj.PessoaNome + "' ,  ")
+            .AppendLine(" '" + obj.PessoaTelefone + "' ,  ")
+            .AppendLine(" '" + obj.PessoaIdade + "' ,  ")
+            .AppendLine(" '" + obj.PessoaCpfCnpj + "' )");
 
             return _db.Execute(query.ToString());
         }
@@ -124,11 +139,15 @@ namespace Healing.Repositories
             StringBuilder query = new StringBuilder();
             query.AppendLine("UPDATE terapias_consultas ")
             .AppendLine("SET ")
-            .AppendLine("id = '" + obj.Id + "', ")
             .AppendLine("id_pessoa = '" + obj.IdPessoa + "', ")
             .AppendLine("data_consulta = '" + obj.DataConsulta.GetFormatDateTime() + "', ")
             .AppendLine("tipo_terapia = '" + obj.TipoTerapia + "', ")
-            .AppendLine("observacoes = '" + obj.Observacoes + "'")
+            .AppendLine("observacoes = '" + obj.Observacoes + "', ")
+            .AppendLine("status = '" + obj.Status + "', ")
+            .AppendLine("pessoa_nome = '" + obj.PessoaNome + "', ")
+            .AppendLine("pessoa_telefone = '" + obj.PessoaTelefone + "', ")
+            .AppendLine("pessoa_idade = '" + obj.PessoaIdade + "', ")
+            .AppendLine("pessoa_cpf_cnpj = '" + obj.PessoaCpfCnpj + "'")
             .AppendLine(" WHERE id = '" + obj.Id + "'");
 
             return _db.Execute(query.ToString());
