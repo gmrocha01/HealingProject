@@ -45,6 +45,43 @@ namespace Healing.Views
             try
             {
                 this.usuarioLogado = loginForm.usuarioLogado;
+
+                // Garante que o PictureBox fique atrás
+                lblSelecioneModulo.Parent = panel1;
+
+                // Labels (assumindo que foram criados no Designer diretamente no Form)
+                lblWelcome.BackColor = Color.Transparent;
+                lblWelcome.ForeColor = Color.White;
+                lblSelecioneModulo.BackColor = Color.Transparent;
+                lblSelecioneModulo.ForeColor = Color.White;
+
+                // Só pra garantir a ordem
+                lblWelcome.BringToFront();
+                lblSelecioneModulo.BringToFront();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void formPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                btnFechar.PerformClick();
             }
             catch (Exception)
             {

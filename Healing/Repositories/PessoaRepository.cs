@@ -125,7 +125,7 @@ namespace Healing.Repositories
                 throw new Exception("Problemas ao preparar o registro para salvar!");
             }
 
-            if (string.IsNullOrEmpty(obj.Id.ToString()))
+            if (string.IsNullOrEmpty(obj.Id.ToString()) || obj.Id.ToString() == "0")
             {
                 return this.Insert(obj);
             }

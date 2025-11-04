@@ -142,7 +142,7 @@ namespace Healing.Repositories
                 object o = (object)obj;
                 PrepararDadosPBanco.Preparar(typeof(TerapiaTipo), ref o);
 
-                if (string.IsNullOrEmpty(obj.Id.ToString()))
+                if (string.IsNullOrEmpty(obj.Id.ToString()) || obj.Id.ToString() == "0")
                 {
                     return this.Insert(obj);
                 }

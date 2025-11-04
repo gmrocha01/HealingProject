@@ -41,6 +41,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormBasePadrao";
             this.Text = "FormBasePadrao";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormBasePadrao_KeyDown);
             this.ResumeLayout(false);
 
         }

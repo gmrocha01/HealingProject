@@ -1,6 +1,8 @@
 ﻿using Healing.Controllers;
 using Healing.Models;
+using Healing.Repositories;
 using Healing.Tools;
+using Healing.Views;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,9 +15,10 @@ using System.Windows.Forms;
 
 namespace Healing.Views
 {
-    public partial class TerapiaDetalheForm : Healing.Views.FormBasePadrao
+    public partial class TerapiaDetalheForm : FormBasePadrao
     {
         TerapiaTipoController terapiaTipoController = new TerapiaTipoController();
+        TerapiaController terapiaController = new TerapiaController();
 
         formPrincipal formPrincipal;
         TerapiaConsulta terapia;
@@ -80,6 +83,8 @@ namespace Healing.Views
                 dtpDataAgendamento.Value = DateTime.Now;
                 txtUsuarioAbertura.Text = formPrincipal.usuarioLogado.UsuarioLogin;
 
+                cmbTipo.SelectedValue = listaTipoTerapia.FirstOrDefault().Id;
+
                 txtValor.Text = "0,00";
                 txtDesconto.Text = "0,00";
                 txtTotalAReceber.Text = "0,00";
@@ -90,7 +95,24 @@ namespace Healing.Views
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (MessageBox.Show("Você deseja realmente realizar a exclusão?", "Healing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    if (this.terapia != null)
+                    {
+                        terapiaController.Delete(this.terapia);
 
+                        MessageBox.Show("Registro excluído com sucesso!", "Healing Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.formListarTerapias.CarregarGrid();
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         public void CarregaCombos()
@@ -102,7 +124,7 @@ namespace Healing.Views
             this.cmbTipo.DataSource = new BindingSource(listaTipoTerapia, null);
             this.cmbTipo.ValueMember = "Id";
             this.cmbTipo.DisplayMember = "Descricao";
-            this.cmbTipo.SelectedValue = listaTipoTerapia.FirstOrDefault();
+            this.cmbTipo.SelectedValue = listaTipoTerapia.FirstOrDefault().Id;
 
             valoresStatus = new Dictionary<string, string>();
 
@@ -152,6 +174,8 @@ namespace Healing.Views
                 this.terapia.TerapiaValorDesconto = txtDesconto.Text.GetDecimal();
                 this.terapia.TerapiaValorTotal = txtTotalAReceber.Text.GetDecimal();
 
+                terapiaController.Save(this.terapia);
+
                 MessageBox.Show("Registro salvo com sucesso!", "Healing Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.formListarTerapias.CarregarGrid();
                 this.Close();
@@ -169,7 +193,7 @@ namespace Healing.Views
             {
                 if (!iniciando)
                 {
-                    var tipoSelecionado = listaTipoTerapia.FirstOrDefault(x => x.Id == cmbStatus.SelectedValue.ToString());
+                    var tipoSelecionado = listaTipoTerapia.FirstOrDefault(x => x.Id == cmbTipo.SelectedValue.ToString());
 
                     if (tipoSelecionado != null)
                     {
@@ -181,7 +205,7 @@ namespace Healing.Views
 
                         txtTotalAReceber.Text = valorTotal.ToString("N2");
                     }
-                }                
+                }
             }
             catch (Exception ex)
             {
@@ -204,6 +228,11 @@ namespace Healing.Views
             {
 
             }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

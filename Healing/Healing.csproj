@@ -121,6 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\icon_padrao.ico" />
+    <None Include="Resources\imagem_fundo_formprincipal.png" />
+    <None Include="Resources\Imagem_fundo_Teste.png" />
     <None Include="Resources\ico_padrao.ico" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

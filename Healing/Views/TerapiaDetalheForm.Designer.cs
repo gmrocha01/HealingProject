@@ -40,29 +40,29 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPagePrincipal = new System.Windows.Forms.TabPage();
-            this.tabPageFinanceiro = new System.Windows.Forms.TabPage();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
+            this.chkPago = new System.Windows.Forms.CheckBox();
+            this.dtpDataAgendamento = new System.Windows.Forms.DateTimePicker();
+            this.txtDataAbertura = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.lblLocalizacao = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.txtResumo = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.txtUsuarioAbertura = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtResumo = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.lblLocalizacao = new System.Windows.Forms.Label();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.tabPageFinanceiro = new System.Windows.Forms.TabPage();
+            this.txtTotalAReceber = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.txtDesconto = new System.Windows.Forms.TextBox();
             this.lblDesconto = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.lblCustoDaOS = new System.Windows.Forms.Label();
-            this.txtTotalAReceber = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtDataAbertura = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtpDataAgendamento = new System.Windows.Forms.DateTimePicker();
-            this.chkPago = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPagePrincipal.SuspendLayout();
             this.tabPageFinanceiro.SuspendLayout();
@@ -73,7 +73,7 @@
             this.txtEmail.Location = new System.Drawing.Point(333, 180);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(263, 26);
-            this.txtEmail.TabIndex = 343;
+            this.txtEmail.TabIndex = 9;
             // 
             // label17
             // 
@@ -101,14 +101,14 @@
             this.txtTelefone.Mask = "(99) 9999-99999";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(107, 26);
-            this.txtTelefone.TabIndex = 340;
+            this.txtTelefone.TabIndex = 8;
             // 
             // txtIdade
             // 
             this.txtIdade.Location = new System.Drawing.Point(516, 129);
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(80, 26);
-            this.txtIdade.TabIndex = 328;
+            this.txtIdade.TabIndex = 6;
             // 
             // label9
             // 
@@ -124,7 +124,7 @@
             this.txtCNPJCPF.Location = new System.Drawing.Point(7, 180);
             this.txtCNPJCPF.Name = "txtCNPJCPF";
             this.txtCNPJCPF.Size = new System.Drawing.Size(207, 26);
-            this.txtCNPJCPF.TabIndex = 324;
+            this.txtCNPJCPF.TabIndex = 7;
             // 
             // label7
             // 
@@ -140,7 +140,7 @@
             this.txtNome.Location = new System.Drawing.Point(8, 129);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(502, 26);
-            this.txtNome.TabIndex = 320;
+            this.txtNome.TabIndex = 5;
             // 
             // label5
             // 
@@ -194,42 +194,97 @@
             this.tabPagePrincipal.Text = "Principal";
             this.tabPagePrincipal.UseVisualStyleBackColor = true;
             // 
-            // tabPageFinanceiro
+            // chkPago
             // 
-            this.tabPageFinanceiro.Controls.Add(this.txtTotalAReceber);
-            this.tabPageFinanceiro.Controls.Add(this.label40);
-            this.tabPageFinanceiro.Controls.Add(this.txtDesconto);
-            this.tabPageFinanceiro.Controls.Add(this.lblDesconto);
-            this.tabPageFinanceiro.Controls.Add(this.txtValor);
-            this.tabPageFinanceiro.Controls.Add(this.lblCustoDaOS);
-            this.tabPageFinanceiro.Location = new System.Drawing.Point(4, 29);
-            this.tabPageFinanceiro.Name = "tabPageFinanceiro";
-            this.tabPageFinanceiro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFinanceiro.Size = new System.Drawing.Size(602, 451);
-            this.tabPageFinanceiro.TabIndex = 1;
-            this.tabPageFinanceiro.Text = "Financeiro";
-            this.tabPageFinanceiro.UseVisualStyleBackColor = true;
+            this.chkPago.AutoSize = true;
+            this.chkPago.Location = new System.Drawing.Point(8, 418);
+            this.chkPago.Name = "chkPago";
+            this.chkPago.Size = new System.Drawing.Size(60, 24);
+            this.chkPago.TabIndex = 388;
+            this.chkPago.Text = "Pago";
+            this.chkPago.UseVisualStyleBackColor = true;
             // 
-            // btnFechar
+            // dtpDataAgendamento
             // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.Location = new System.Drawing.Point(536, 490);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(75, 33);
-            this.btnFechar.TabIndex = 346;
-            this.btnFechar.Text = "Fechar";
-            this.btnFechar.UseVisualStyleBackColor = true;
+            this.dtpDataAgendamento.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dtpDataAgendamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataAgendamento.Location = new System.Drawing.Point(202, 23);
+            this.dtpDataAgendamento.Name = "dtpDataAgendamento";
+            this.dtpDataAgendamento.Size = new System.Drawing.Size(144, 26);
+            this.dtpDataAgendamento.TabIndex = 1;
             // 
-            // btnExcluir
+            // txtDataAbertura
             // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.Location = new System.Drawing.Point(5, 490);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 33);
-            this.btnExcluir.TabIndex = 347;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.txtDataAbertura.Enabled = false;
+            this.txtDataAbertura.Location = new System.Drawing.Point(8, 23);
+            this.txtDataAbertura.Name = "txtDataAbertura";
+            this.txtDataAbertura.Size = new System.Drawing.Size(188, 26);
+            this.txtDataAbertura.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(198, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 20);
+            this.label3.TabIndex = 385;
+            this.label3.Text = "Data Agendamento:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(399, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.TabIndex = 383;
+            this.label1.Text = "Status:";
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Location = new System.Drawing.Point(403, 74);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(193, 28);
+            this.cmbStatus.TabIndex = 4;
+            // 
+            // lblLocalizacao
+            // 
+            this.lblLocalizacao.AutoSize = true;
+            this.lblLocalizacao.Location = new System.Drawing.Point(4, 52);
+            this.lblLocalizacao.Name = "lblLocalizacao";
+            this.lblLocalizacao.Size = new System.Drawing.Size(39, 20);
+            this.lblLocalizacao.TabIndex = 381;
+            this.lblLocalizacao.Text = "Tipo:";
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(8, 74);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(338, 28);
+            this.cmbTipo.TabIndex = 3;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
+            // 
+            // txtResumo
+            // 
+            this.txtResumo.AcceptsReturn = true;
+            this.txtResumo.Location = new System.Drawing.Point(7, 232);
+            this.txtResumo.Multiline = true;
+            this.txtResumo.Name = "txtResumo";
+            this.txtResumo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResumo.Size = new System.Drawing.Size(589, 180);
+            this.txtResumo.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(4, 209);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(118, 20);
+            this.label23.TabIndex = 377;
+            this.label23.Text = "Resumo do Caso:";
             // 
             // txtUsuarioAbertura
             // 
@@ -237,7 +292,7 @@
             this.txtUsuarioAbertura.Location = new System.Drawing.Point(403, 23);
             this.txtUsuarioAbertura.Name = "txtUsuarioAbertura";
             this.txtUsuarioAbertura.Size = new System.Drawing.Size(193, 26);
-            this.txtUsuarioAbertura.TabIndex = 376;
+            this.txtUsuarioAbertura.TabIndex = 2;
             // 
             // label28
             // 
@@ -257,64 +312,41 @@
             this.label2.TabIndex = 373;
             this.label2.Text = "Data Abertura:";
             // 
-            // txtResumo
+            // tabPageFinanceiro
             // 
-            this.txtResumo.AcceptsReturn = true;
-            this.txtResumo.Location = new System.Drawing.Point(7, 232);
-            this.txtResumo.Multiline = true;
-            this.txtResumo.Name = "txtResumo";
-            this.txtResumo.Size = new System.Drawing.Size(589, 180);
-            this.txtResumo.TabIndex = 378;
+            this.tabPageFinanceiro.Controls.Add(this.txtTotalAReceber);
+            this.tabPageFinanceiro.Controls.Add(this.label40);
+            this.tabPageFinanceiro.Controls.Add(this.txtDesconto);
+            this.tabPageFinanceiro.Controls.Add(this.lblDesconto);
+            this.tabPageFinanceiro.Controls.Add(this.txtValor);
+            this.tabPageFinanceiro.Controls.Add(this.lblCustoDaOS);
+            this.tabPageFinanceiro.Location = new System.Drawing.Point(4, 29);
+            this.tabPageFinanceiro.Name = "tabPageFinanceiro";
+            this.tabPageFinanceiro.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFinanceiro.Size = new System.Drawing.Size(602, 451);
+            this.tabPageFinanceiro.TabIndex = 1;
+            this.tabPageFinanceiro.Text = "Financeiro";
+            this.tabPageFinanceiro.UseVisualStyleBackColor = true;
             // 
-            // label23
+            // txtTotalAReceber
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(4, 209);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(118, 20);
-            this.label23.TabIndex = 377;
-            this.label23.Text = "Resumo do Caso:";
+            this.txtTotalAReceber.Enabled = false;
+            this.txtTotalAReceber.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTotalAReceber.Location = new System.Drawing.Point(116, 69);
+            this.txtTotalAReceber.Name = "txtTotalAReceber";
+            this.txtTotalAReceber.Size = new System.Drawing.Size(216, 26);
+            this.txtTotalAReceber.TabIndex = 2;
+            this.txtTotalAReceber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lblLocalizacao
+            // label40
             // 
-            this.lblLocalizacao.AutoSize = true;
-            this.lblLocalizacao.Location = new System.Drawing.Point(4, 52);
-            this.lblLocalizacao.Name = "lblLocalizacao";
-            this.lblLocalizacao.Size = new System.Drawing.Size(39, 20);
-            this.lblLocalizacao.TabIndex = 381;
-            this.lblLocalizacao.Text = "Tipo:";
-            this.lblLocalizacao.Visible = false;
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(8, 74);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(338, 28);
-            this.cmbTipo.TabIndex = 382;
-            this.cmbTipo.Visible = false;
-            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(399, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
-            this.label1.TabIndex = 383;
-            this.label1.Text = "Status:";
-            this.label1.Visible = false;
-            // 
-            // cmbStatus
-            // 
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(403, 74);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(193, 28);
-            this.cmbStatus.TabIndex = 384;
-            this.cmbStatus.Visible = false;
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label40.Location = new System.Drawing.Point(4, 72);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(108, 20);
+            this.label40.TabIndex = 333;
+            this.label40.Text = "Total a Receber:";
             // 
             // txtDesconto
             // 
@@ -322,7 +354,7 @@
             this.txtDesconto.Location = new System.Drawing.Point(116, 38);
             this.txtDesconto.Name = "txtDesconto";
             this.txtDesconto.Size = new System.Drawing.Size(217, 26);
-            this.txtDesconto.TabIndex = 332;
+            this.txtDesconto.TabIndex = 1;
             this.txtDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDesconto.TextChanged += new System.EventHandler(this.txtDesconto_TextChanged);
             // 
@@ -339,11 +371,11 @@
             // txtValor
             // 
             this.txtValor.Enabled = false;
-            this.txtValor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
+            this.txtValor.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtValor.Location = new System.Drawing.Point(116, 6);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(216, 26);
-            this.txtValor.TabIndex = 330;
+            this.txtValor.TabIndex = 0;
             this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCustoDaOS
@@ -356,25 +388,27 @@
             this.lblCustoDaOS.TabIndex = 329;
             this.lblCustoDaOS.Text = "Valor:";
             // 
-            // txtTotalAReceber
+            // btnFechar
             // 
-            this.txtTotalAReceber.Enabled = false;
-            this.txtTotalAReceber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalAReceber.Location = new System.Drawing.Point(116, 69);
-            this.txtTotalAReceber.Name = "txtTotalAReceber";
-            this.txtTotalAReceber.Size = new System.Drawing.Size(216, 26);
-            this.txtTotalAReceber.TabIndex = 334;
-            this.txtTotalAReceber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Location = new System.Drawing.Point(536, 490);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(75, 33);
+            this.btnFechar.TabIndex = 1;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // label40
+            // btnExcluir
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label40.Location = new System.Drawing.Point(4, 72);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(108, 20);
-            this.label40.TabIndex = 333;
-            this.label40.Text = "Total a Receber:";
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.Location = new System.Drawing.Point(5, 490);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 33);
+            this.btnExcluir.TabIndex = 347;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -384,46 +418,10 @@
             this.btnSalvar.Location = new System.Drawing.Point(455, 490);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 33);
-            this.btnSalvar.TabIndex = 348;
+            this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // txtDataAbertura
-            // 
-            this.txtDataAbertura.Enabled = false;
-            this.txtDataAbertura.Location = new System.Drawing.Point(8, 23);
-            this.txtDataAbertura.Name = "txtDataAbertura";
-            this.txtDataAbertura.Size = new System.Drawing.Size(188, 26);
-            this.txtDataAbertura.TabIndex = 386;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(198, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 20);
-            this.label3.TabIndex = 385;
-            this.label3.Text = "Data Agendamento:";
-            // 
-            // dtpDataAgendamento
-            // 
-            this.dtpDataAgendamento.CustomFormat = "dd/MM/yyyy HH:mm";
-            this.dtpDataAgendamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataAgendamento.Location = new System.Drawing.Point(202, 23);
-            this.dtpDataAgendamento.Name = "dtpDataAgendamento";
-            this.dtpDataAgendamento.Size = new System.Drawing.Size(144, 26);
-            this.dtpDataAgendamento.TabIndex = 387;
-            // 
-            // chkPago
-            // 
-            this.chkPago.AutoSize = true;
-            this.chkPago.Location = new System.Drawing.Point(8, 418);
-            this.chkPago.Name = "chkPago";
-            this.chkPago.Size = new System.Drawing.Size(60, 24);
-            this.chkPago.TabIndex = 388;
-            this.chkPago.Text = "Pago";
-            this.chkPago.UseVisualStyleBackColor = true;
             // 
             // TerapiaDetalheForm
             // 

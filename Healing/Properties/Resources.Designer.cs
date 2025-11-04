@@ -83,6 +83,26 @@ namespace Healing.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagem_fundo_formprincipal {
+            get {
+                object obj = ResourceManager.GetObject("imagem_fundo_formprincipal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagem_fundo_Teste {
+            get {
+                object obj = ResourceManager.GetObject("Imagem_fundo_Teste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tela_login {
             get {
                 object obj = ResourceManager.GetObject("tela_login", resourceCulture);

@@ -53,6 +53,7 @@ namespace Healing.Views
                 if (usuario != null)
                 {
                     this.usuarioLogado = usuario;
+                    this.Hide();
                     formPrincipal frm = new formPrincipal(this);
                     frm.ShowDialog();
                 }
@@ -64,6 +65,24 @@ namespace Healing.Views
             catch (Exception ex)
             {
                 MessageBox.Show("Problemas ao efetuar Login!\n\n" + ex.Message, "Healing Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtUsuario.Text = "";
+                txtSenha.Text = "";
+            }
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    e.SuppressKeyPress = true;
+                    btnSalvar.PerformClick();
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
     }

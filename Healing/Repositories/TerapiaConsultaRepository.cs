@@ -133,7 +133,8 @@ namespace Healing.Repositories
             .AppendLine("terapia_valor , ")
             .AppendLine("terapia_valor_desconto , ")
             .AppendLine("terapia_valor_total , ")
-            .AppendLine("usuario_responsavel  ) VALUES(")
+            .AppendLine("usuario_responsavel , ")
+            .AppendLine("pago ) VALUES(")
             .AppendLine(" '" + obj.IdPessoa + "' ,  ")
             .AppendLine(" '" + obj.DataAbertura.GetFormatDateTime() + "' ,  ")
             .AppendLine(" '" + obj.DataConsulta.GetFormatDateTime() + "' ,  ")
@@ -193,7 +194,7 @@ namespace Healing.Repositories
                 object o = (object)obj;
                 PrepararDadosPBanco.Preparar(typeof(TerapiaConsulta), ref o);
 
-                if (string.IsNullOrEmpty(obj.Id.ToString()))
+                if (string.IsNullOrEmpty(obj.Id.ToString()) || obj.Id.ToString() == "0")
                 {
                     return this.Insert(obj);
                 }

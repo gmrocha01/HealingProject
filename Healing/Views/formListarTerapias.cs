@@ -20,15 +20,27 @@ namespace Healing.Views
 
         List<TerapiaConsulta> listaRegistros = new List<TerapiaConsulta>();
 
+        List<TerapiaTipo> terapiaTipos = new List<TerapiaTipo>();
+        TerapiaTipoController tipoController = new TerapiaTipoController();
+
         public formListarTerapias(formPrincipal formPrincipal)
         {
             InitializeComponent();
             this.formPrincipal = formPrincipal;
-        }        
+        }
 
         private void formListarTerapias_Load(object sender, EventArgs e)
         {
-            Init();
+            try
+            {
+                terapiaTipos = tipoController.GetAll();
+
+                Init();
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void Init()
@@ -43,9 +55,9 @@ namespace Healing.Views
 
         public void CarregarGrid()
         {
-            List<TerapiaConsulta> listaRegistros = _ctrl.GetAll();
+            listaRegistros = _ctrl.GetAll();
 
-            listaRegistros = listaRegistros.OrderBy(x=> x.Id).ToList();
+            listaRegistros = listaRegistros.OrderBy(x => x.Id).ToList();
 
             DataTable dtTab = new DataTable("sqls");
             dtTab.Clear();
@@ -55,28 +67,34 @@ namespace Healing.Views
             dtTab.Columns.Add("Status", typeof(string));
             dtTab.Columns.Add("Tipo", typeof(string));
             dtTab.Columns.Add("Valor", typeof(string));
+            dtTab.Columns.Add("Pago", typeof(string));
             DataRow row;
 
             foreach (var item in listaRegistros)
             {
                 row = dtTab.NewRow();
-                row["Numero"] = item.Id;               
+                row["Numero"] = item.Id;
                 row["Cliente"] = item.PessoaNome;
-                row["Data"] = item.DataConsulta.ToString("dd/MM/yyyy HH:mm"); 
+                row["Data"] = item.DataConsulta.ToString("dd/MM/yyyy HH:mm");
                 row["Status"] = item.Status;
-                row["Tipo"] = item.TipoTerapia;
+
+                var tipoTerapia = terapiaTipos.FirstOrDefault(x => x.Id == item.TipoTerapia);
+
+                row["Tipo"] = tipoTerapia.Descricao;
                 row["Valor"] = item.TerapiaValorTotal.ToString("N2");
+                row["Pago"] = item.Pago;
                 dtTab.Rows.Add(row);
             }
 
-            this.dgv.DataSource = dtTab;            
+            this.dgv.DataSource = dtTab;
 
-            this.dgv.Columns["Numero"].Width = 100;
-            this.dgv.Columns["Cliente"].Width = dgv.Width - 100 - 125 - 100 - 100 - 120 - 17 - 3;
+            this.dgv.Columns["Numero"].Width = 70;
+            this.dgv.Columns["Cliente"].Width = dgv.Width - 70 - 125 - 100 - 170 - 120 - 70 - 17 - 3;
             this.dgv.Columns["Data"].Width = 125;
             this.dgv.Columns["Status"].Width = 100;
-            this.dgv.Columns["Tipo"].Width = 100;
+            this.dgv.Columns["Tipo"].Width = 170;
             this.dgv.Columns["Valor"].Width = 120;
+            this.dgv.Columns["Pago"].Width = 70;
 
             if (!dgv.Controls.OfType<VScrollBar>().First().Enabled)
             {
@@ -124,6 +142,11 @@ namespace Healing.Views
             {
 
             }
+        }
+
+        private void dgv_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
