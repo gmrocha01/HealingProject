@@ -10,9 +10,10 @@ namespace Healing.Controllers
 {
     public class PessoaController : ControllerAbs<Pessoa>, IController<Pessoa>
     {
-        private readonly PessoaRepository repository;
+        private PessoaRepository repository;
         public PessoaController()
         {
+            this.repository = new PessoaRepository();
             this.Repositorio = repository;
         }
         public List<Pessoa> GetAll()

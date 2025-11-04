@@ -13,9 +13,10 @@ namespace Healing.Controllers
 {
     public class UsuarioController : ControllerAbs<Usuario>, IController<Usuario>
     {
-        private readonly UsuarioRepository repository;
+        private UsuarioRepository repository;
         public UsuarioController()
         {
+            this.repository = new UsuarioRepository();
             this.Repositorio = repository;
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPrincipal));
             this.btnPessoas = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnTerapias = new System.Windows.Forms.Button();
@@ -36,13 +37,16 @@
             // 
             // btnPessoas
             // 
+            this.btnPessoas.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPessoas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPessoas.ForeColor = System.Drawing.SystemColors.Control;
             this.btnPessoas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPessoas.Location = new System.Drawing.Point(18, 140);
+            this.btnPessoas.Location = new System.Drawing.Point(17, 150);
             this.btnPessoas.Name = "btnPessoas";
             this.btnPessoas.Size = new System.Drawing.Size(148, 33);
             this.btnPessoas.TabIndex = 326;
             this.btnPessoas.Text = "Pessoas";
-            this.btnPessoas.UseVisualStyleBackColor = true;
+            this.btnPessoas.UseVisualStyleBackColor = false;
             this.btnPessoas.Visible = false;
             this.btnPessoas.Click += new System.EventHandler(this.btnPessoas_Click);
             // 
@@ -50,7 +54,7 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(12, 9);
+            this.lblWelcome.Location = new System.Drawing.Point(11, 10);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(178, 31);
             this.lblWelcome.TabIndex = 325;
@@ -58,21 +62,23 @@
             // 
             // btnTerapias
             // 
+            this.btnTerapias.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnTerapias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTerapias.ForeColor = System.Drawing.SystemColors.Control;
             this.btnTerapias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTerapias.Location = new System.Drawing.Point(18, 101);
+            this.btnTerapias.Location = new System.Drawing.Point(17, 102);
             this.btnTerapias.Name = "btnTerapias";
             this.btnTerapias.Size = new System.Drawing.Size(148, 33);
             this.btnTerapias.TabIndex = 324;
             this.btnTerapias.Text = "Terapias";
-            this.btnTerapias.UseVisualStyleBackColor = true;
-            this.btnTerapias.Visible = false;
+            this.btnTerapias.UseVisualStyleBackColor = false;
             this.btnTerapias.Click += new System.EventHandler(this.btnTerapias_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 64);
+            this.label1.Location = new System.Drawing.Point(14, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 18);
             this.label1.TabIndex = 327;
@@ -82,16 +88,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 497);
+            this.ClientSize = new System.Drawing.Size(1067, 538);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPessoas);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnTerapias);
             this.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Início";
+            this.Load += new System.EventHandler(this.formPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,8 +28,10 @@
     <Compile Include="Controllers\ControllerAbs.cs" />
     <Compile Include="Controllers\IController.cs" />
     <Compile Include="Controllers\TerapiaConsultaObservacoesController.cs" />
+    <Compile Include="Controllers\TerapiaTipoController.cs" />
     <Compile Include="DBConnection\Connection.cs" />
     <Compile Include="Models\TerapiaConsultaObservacoes.cs" />
+    <Compile Include="Models\TerapiaTipo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Database\\MySqlConexao.cs" />
     <Compile Include="Controllers\\UsuarioController.cs" />
@@ -47,11 +49,18 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\RepositoryAbs.cs" />
     <Compile Include="Repositories\TerapiaConsultaObservacoesRepository.cs" />
+    <Compile Include="Repositories\TerapiaTipoRepository.cs" />
     <Compile Include="Repositories\TerapiaConsultaRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="Tools\PrepararDadosPBanco.cs" />
     <Compile Include="Tools\UtilV2.cs" />
+    <Compile Include="Views\FormBasePadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormBasePadrao.Designer.cs">
+      <DependentUpon>FormBasePadrao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\formListarTerapias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +79,11 @@
     <Compile Include="Views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\\TerapiasListForm.cs">
+    <Compile Include="Views\TerapiaDetalheForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\\TerapiaDetalheForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\TerapiaDetalheForm.Designer.cs">
+      <DependentUpon>TerapiaDetalheForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\\PessoasForm.cs">
       <SubType>Form</SubType>
@@ -88,6 +97,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormBasePadrao.resx">
+      <DependentUpon>FormBasePadrao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\formListarTerapias.resx">
       <DependentUpon>formListarTerapias.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,8 +109,8 @@
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\TerapiasListForm.resx">
-      <DependentUpon>TerapiasListForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\TerapiaDetalheForm.resx">
+      <DependentUpon>TerapiaDetalheForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icone_healing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\icon_padrao.ico" />
+    <None Include="Resources\ico_padrao.ico" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>bin\Debug\</OutputPath>

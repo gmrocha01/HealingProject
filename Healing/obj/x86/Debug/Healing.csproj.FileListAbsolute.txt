@@ -14,7 +14,6 @@ C:\FontesCSharp\HealingProjectV2\Healing\bin\Debug\Healing.exe
 C:\FontesCSharp\HealingProjectV2\Healing\bin\Debug\Healing.pdb
 C:\FontesCSharp\HealingProjectV2\Healing\bin\Debug\MySql.Data.dll
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.csproj.AssemblyReference.cache
-C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.TerapiasListForm.resources
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.csproj.GenerateResource.cache
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.csproj.CoreCompileInputs.cache
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.csproj.Up2Date
@@ -24,3 +23,5 @@ C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Properties.Resour
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.formListarTerapias.resources
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.formPrincipal.resources
 C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.LoginForm.resources
+C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.FormBasePadrao.resources
+C:\FontesCSharp\HealingProjectV2\Healing\obj\x86\Debug\Healing.Views.TerapiaDetalheForm.resources

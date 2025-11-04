@@ -13,9 +13,10 @@ namespace Healing.Controllers
 {
     public class TerapiaConsultaObservacoesController : ControllerAbs<TerapiaConsultaObservacoes>, IController<TerapiaConsultaObservacoes>
     {
-        private readonly TerapiaConsultaObservacoesRepositorio repository;
+        private TerapiaConsultaObservacoesRepositorio repository;
         public TerapiaConsultaObservacoesController()
         {
+            this.repository = new TerapiaConsultaObservacoesRepositorio();
             this.Repositorio = repository;
         }
 

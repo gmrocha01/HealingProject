@@ -13,11 +13,11 @@ namespace Healing.Repositories
 {
     public class TerapiaConsultaRepository : RepositoryAbs<TerapiaConsulta>, IRepository<TerapiaConsulta>
     {
-        private readonly Connection _db;
+        private Connection _db;
 
-        public TerapiaConsultaRepository(Connection db)
+        public TerapiaConsultaRepository()
         {
-            _db = db;
+            _db = new Connection();
         }
 
         protected override List<TerapiaConsulta> _Select(List<string> parametros = null, int limit = 0, string orderBy = "", string groupBy = "")
@@ -62,14 +62,21 @@ namespace Healing.Repositories
                 TerapiaConsulta registro = new TerapiaConsulta();
                 registro.Id = dt.Rows[i]["id"].ToString().GetInteiro();
                 registro.IdPessoa = dt.Rows[i]["id_pessoa"].ToString().GetInteiro();
+                registro.DataAbertura = dt.Rows[i]["data_abertura"].ToString().GetData();
                 registro.DataConsulta = dt.Rows[i]["data_consulta"].ToString().GetData();
                 registro.TipoTerapia = dt.Rows[i]["tipo_terapia"].ToString();
                 registro.Observacoes = dt.Rows[i]["observacoes"].ToString(); 
                 registro.Status = dt.Rows[i]["status"].ToString();
                 registro.PessoaNome = dt.Rows[i]["pessoa_nome"].ToString();
                 registro.PessoaTelefone = dt.Rows[i]["pessoa_telefone"].ToString();
+                registro.PessoaEmail = dt.Rows[i]["pessoa_email"].ToString();
                 registro.PessoaIdade = dt.Rows[i]["pessoa_idade"].ToString();
                 registro.PessoaCpfCnpj = dt.Rows[i]["pessoa_cpf_cnpj"].ToString();
+                registro.TerapiaValor = dt.Rows[i]["terapia_valor"].ToString().GetDecimal();
+                registro.TerapiaValorDesconto = dt.Rows[i]["terapia_valor_desconto"].ToString().GetDecimal();
+                registro.TerapiaValorTotal = dt.Rows[i]["terapia_valor_total"].ToString().GetDecimal();
+                registro.UsuarioResponsavel = dt.Rows[i]["usuario_responsavel"].ToString();
+                registro.Pago = dt.Rows[i]["pago"].ToString();
                 listaObjeto.Add(registro);
             }
 
@@ -113,23 +120,36 @@ namespace Healing.Repositories
             StringBuilder query = new StringBuilder();
             query.AppendLine("INSERT INTO terapias_consultas(")
             .AppendLine("id_pessoa , ")
+            .AppendLine("data_abertura , ")
             .AppendLine("data_consulta , ")
             .AppendLine("tipo_terapia , ")
             .AppendLine("observacoes, ")
             .AppendLine("status , ")
             .AppendLine("pessoa_nome , ")
             .AppendLine("pessoa_telefone , ")
+            .AppendLine("pessoa_email , ")
             .AppendLine("pessoa_idade , ")
-            .AppendLine("pessoa_cpf_cnpj  ) VALUES(").AppendLine(" '" + obj.Id + "' ,  ")
+            .AppendLine("pessoa_cpf_cnpj , ")
+            .AppendLine("terapia_valor , ")
+            .AppendLine("terapia_valor_desconto , ")
+            .AppendLine("terapia_valor_total , ")
+            .AppendLine("usuario_responsavel  ) VALUES(")
             .AppendLine(" '" + obj.IdPessoa + "' ,  ")
+            .AppendLine(" '" + obj.DataAbertura.GetFormatDateTime() + "' ,  ")
             .AppendLine(" '" + obj.DataConsulta.GetFormatDateTime() + "' ,  ")
             .AppendLine(" '" + obj.TipoTerapia + "' ,  ")
             .AppendLine(" '" + obj.Observacoes + "' ,  ")
             .AppendLine(" '" + obj.Status + "' ,  ")
             .AppendLine(" '" + obj.PessoaNome + "' ,  ")
             .AppendLine(" '" + obj.PessoaTelefone + "' ,  ")
+            .AppendLine(" '" + obj.PessoaEmail + "' ,  ")
             .AppendLine(" '" + obj.PessoaIdade + "' ,  ")
-            .AppendLine(" '" + obj.PessoaCpfCnpj + "' )");
+            .AppendLine(" '" + obj.PessoaCpfCnpj + "' ,  ")
+            .AppendLine(" '" + obj.TerapiaValor.GetStringDB() + "' ,  ")
+            .AppendLine(" '" + obj.TerapiaValorDesconto.GetStringDB() + "' ,  ")
+            .AppendLine(" '" + obj.TerapiaValorTotal.GetStringDB() + "' ,  ")
+            .AppendLine(" '" + obj.UsuarioResponsavel + "' ,  ")
+            .AppendLine(" '" + obj.Pago + "' )");
 
             return _db.Execute(query.ToString());
         }
@@ -140,14 +160,21 @@ namespace Healing.Repositories
             query.AppendLine("UPDATE terapias_consultas ")
             .AppendLine("SET ")
             .AppendLine("id_pessoa = '" + obj.IdPessoa + "', ")
+            .AppendLine("data_abertura = '" + obj.DataAbertura.GetFormatDateTime() + "', ")
             .AppendLine("data_consulta = '" + obj.DataConsulta.GetFormatDateTime() + "', ")
             .AppendLine("tipo_terapia = '" + obj.TipoTerapia + "', ")
             .AppendLine("observacoes = '" + obj.Observacoes + "', ")
             .AppendLine("status = '" + obj.Status + "', ")
             .AppendLine("pessoa_nome = '" + obj.PessoaNome + "', ")
             .AppendLine("pessoa_telefone = '" + obj.PessoaTelefone + "', ")
+            .AppendLine("pessoa_email = '" + obj.PessoaEmail + "', ")
             .AppendLine("pessoa_idade = '" + obj.PessoaIdade + "', ")
-            .AppendLine("pessoa_cpf_cnpj = '" + obj.PessoaCpfCnpj + "'")
+            .AppendLine("pessoa_cpf_cnpj = '" + obj.PessoaCpfCnpj + "', ")
+            .AppendLine("terapia_valor = '" + obj.TerapiaValor.GetStringDB() + "', ")
+            .AppendLine("terapia_valor_desconto = '" + obj.TerapiaValorDesconto.GetStringDB() + "', ")
+            .AppendLine("terapia_valor_total = '" + obj.TerapiaValorTotal.GetStringDB() + "', ")
+            .AppendLine("usuario_responsavel = '" + obj.UsuarioResponsavel + "', ")
+            .AppendLine("pago = '" + obj.Pago + "'")
             .AppendLine(" WHERE id = '" + obj.Id + "'");
 
             return _db.Execute(query.ToString());

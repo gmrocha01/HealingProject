@@ -13,11 +13,11 @@ namespace Healing.Repositories
 {
     public class TerapiaConsultaObservacoesRepositorio : RepositoryAbs<TerapiaConsultaObservacoes>, IRepository<TerapiaConsultaObservacoes>
     {
-        private readonly Connection _db;
+        private Connection _db;
 
-        public TerapiaConsultaObservacoesRepositorio(Connection db)
+        public TerapiaConsultaObservacoesRepositorio()
         {
-            _db = db;
+            _db = new Connection();
         }
 
         protected override List<TerapiaConsultaObservacoes> _Select(List<string> Parametros, int Limit = 0, string OrderBy = "", string GroupBy = "")

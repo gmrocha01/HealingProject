@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,11 @@ namespace Healing.DBConnection
 {
     public class Connection
     {
-        private readonly string _connectionString;
+        private string _connectionString;
 
-        public Connection(string connectionString)
+        public Connection()
         {
-            _connectionString = connectionString;
+            _connectionString = ConfigurationManager.ConnectionStrings["HealingDb"].ConnectionString;
         }
 
         // Método genérico para SELECT

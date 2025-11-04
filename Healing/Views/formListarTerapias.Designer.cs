@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formListarTerapias));
             this.btnNovaConsulta = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.btnFechar = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.btnNovaConsulta.TabIndex = 308;
             this.btnNovaConsulta.Text = "Nova Consulta";
             this.btnNovaConsulta.UseVisualStyleBackColor = false;
+            this.btnNovaConsulta.Click += new System.EventHandler(this.btnNovaConsulta_Click);
             // 
             // dgv
             // 
@@ -76,6 +78,7 @@
             this.dgv.RowTemplate.Height = 25;
             this.dgv.Size = new System.Drawing.Size(1043, 402);
             this.dgv.TabIndex = 307;
+            this.dgv.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_CellMouseDoubleClick);
             // 
             // btnFechar
             // 
@@ -109,6 +112,7 @@
             this.Controls.Add(this.btnNovaConsulta);
             this.Controls.Add(this.dgv);
             this.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formListarTerapias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -8,22 +8,22 @@ using System.Linq;
 
 namespace Healing.Controllers
 {
-    public class TerapiaController : ControllerAbs<TerapiaConsulta>, IController<TerapiaConsulta>
+    public class TerapiaTipoController : ControllerAbs<TerapiaTipo>, IController<TerapiaTipo>
     {
-        private TerapiaConsultaRepository repository;
+        private TerapiaTipoRepository repository;
 
-        public TerapiaController()
+        public TerapiaTipoController()
         {
-            this.repository = new TerapiaConsultaRepository();
+            this.repository = new TerapiaTipoRepository();
             this.Repositorio = repository;
         }
-        public List<TerapiaConsulta> GetAll()
+        public List<TerapiaTipo> GetAll()
         { 
-            List<TerapiaConsulta> listaRegistros = new List<TerapiaConsulta>();
+            List<TerapiaTipo> listaRegistros = new List<TerapiaTipo>();
             return listaRegistros = repository.Select(new List<string>());
         }
 
-        public TerapiaConsulta GetById(int id)
+        public TerapiaTipo GetById(int id)
         {
             List<string> param = new List<string>();
             param.Add($"id = '{id}'");

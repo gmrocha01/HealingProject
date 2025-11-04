@@ -12,11 +12,11 @@ namespace Healing.Repositories
 {
     public class UsuarioRepository : RepositoryAbs<Usuario>, IRepository<Usuario>
     {
-        private readonly Connection _db;
+        private Connection _db;        
 
-        public UsuarioRepository(Connection db)
+        public UsuarioRepository()
         {
-            _db = db;
+            _db = new Connection();
         }
 
         protected override List<Usuario> _Select(List<string> Parametros, int Limit = 0, string OrderBy = "", string GroupBy = "")
