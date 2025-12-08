@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\FontesCSharp\\HealingProjectV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\repositories\\terapiaconsultaobservacoesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\models\\terapiatipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\models\\terapiatipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\models\\terapiaconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\models\\terapiaconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\views\\formlistarterapias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\views\\formlistarterapias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\repositories\\terapiaconsultaobservacoesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\repositories\\terapiaconsultaobservacoesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\repositories\\terapiatiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\repositories\\terapiatiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\repositories\\terapiatiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\repositories\\terapiaconsultarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,15 +47,11 @@
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\views\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\views\\formlistarterapias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\views\\formlistarterapias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\views\\terapiadetalheform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\views\\terapiadetalheform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\views\\terapiadetalheform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|c:\\fontescsharp\\healingprojectv2\\healing\\dbconnection\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\dbconnection\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\dbconnection\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -84,10 +92,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\controllers\\terapiatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\controllers\\terapiatipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|C:\\FontesCSharp\\HealingProjectV2\\healing\\models\\terapiaconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4789-ABCD-0123456789AB}|Healing\\Healing.csproj|solutionrelative:healing\\models\\terapiaconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,46 +109,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Healing\\Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Healing\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAmwH0AAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T19:51:21.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TerapiaTipoRepository.cs",
-              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaTipoRepository.cs",
-              "RelativeDocumentMoniker": "Healing\\Repositories\\TerapiaTipoRepository.cs",
-              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaTipoRepository.cs",
-              "RelativeToolTip": "Healing\\Repositories\\TerapiaTipoRepository.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAswJAAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T19:51:11.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TerapiaTipo.cs",
+              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaTipo.cs",
+              "RelativeDocumentMoniker": "Healing\\Models\\TerapiaTipo.cs",
+              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaTipo.cs",
+              "RelativeToolTip": "Healing\\Models\\TerapiaTipo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T19:47:56.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TerapiaConsultaObservacoesRepository.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaConsultaObservacoesRepository.cs",
               "RelativeDocumentMoniker": "Healing\\Repositories\\TerapiaConsultaObservacoesRepository.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaConsultaObservacoesRepository.cs",
               "RelativeToolTip": "Healing\\Repositories\\TerapiaConsultaObservacoesRepository.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAYwJwAAAAJAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAYwJkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T19:50:58.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T19:50:58.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PessoaRepository.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\PessoaRepository.cs",
               "RelativeDocumentMoniker": "Healing\\Repositories\\PessoaRepository.cs",
@@ -152,12 +142,11 @@
               "RelativeToolTip": "Healing\\Repositories\\PessoaRepository.cs",
               "ViewState": "AQIAAG4AAAAAAAAAAAAuwH8AAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T19:50:35.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T19:50:35.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Connection.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\DBConnection\\Connection.cs",
               "RelativeDocumentMoniker": "Healing\\DBConnection\\Connection.cs",
@@ -165,12 +154,11 @@
               "RelativeToolTip": "Healing\\DBConnection\\Connection.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAUwCsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:38:57.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:38:57.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "FormBasePadrao.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\FormBasePadrao.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\FormBasePadrao.cs",
@@ -178,24 +166,22 @@
               "RelativeToolTip": "Healing\\Views\\FormBasePadrao.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAswD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:36:35.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T14:36:35.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TerapiaDetalheForm.cs [Design]",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\TerapiaDetalheForm.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\TerapiaDetalheForm.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\TerapiaDetalheForm.cs [Design]",
               "RelativeToolTip": "Healing\\Views\\TerapiaDetalheForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:00:01.833Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T18:00:01.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TerapiaConsultaRepository.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaConsultaRepository.cs",
               "RelativeDocumentMoniker": "Healing\\Repositories\\TerapiaConsultaRepository.cs",
@@ -203,36 +189,83 @@
               "RelativeToolTip": "Healing\\Repositories\\TerapiaConsultaRepository.cs",
               "ViewState": "AQIAAKgAAAAAAAAAAAAAAMUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:23:10.849Z",
+              "WhenOpened": "2025-11-04T14:23:10.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "formListarTerapias.cs",
+              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs",
+              "RelativeDocumentMoniker": "Healing\\Views\\formListarTerapias.cs",
+              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs",
+              "RelativeToolTip": "Healing\\Views\\formListarTerapias.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:06:22.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TerapiaConsulta.cs",
+              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaConsulta.cs",
+              "RelativeDocumentMoniker": "Healing\\Models\\TerapiaConsulta.cs",
+              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaConsulta.cs",
+              "RelativeToolTip": "Healing\\Models\\TerapiaConsulta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:23:18.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TerapiaTipoRepository.cs",
+              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaTipoRepository.cs",
+              "RelativeDocumentMoniker": "Healing\\Repositories\\TerapiaTipoRepository.cs",
+              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\TerapiaTipoRepository.cs",
+              "RelativeToolTip": "Healing\\Repositories\\TerapiaTipoRepository.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAswJAAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:51:11.003Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Healing\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Healing\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAmwH0AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:51:21.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "formListarTerapias.cs [Design]",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\formListarTerapias.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs [Design]",
               "RelativeToolTip": "Healing\\Views\\formListarTerapias.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T15:06:03.968Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T15:06:03.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "formPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formPrincipal.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\formPrincipal.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formPrincipal.cs [Design]",
               "RelativeToolTip": "Healing\\Views\\formPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:12:57.649Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T14:12:57.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "formPrincipal.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formPrincipal.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\formPrincipal.cs",
@@ -240,25 +273,11 @@
               "RelativeToolTip": "Healing\\Views\\formPrincipal.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAYwDYAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:14:09.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T14:14:09.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "formListarTerapias.cs",
-              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs",
-              "RelativeDocumentMoniker": "Healing\\Views\\formListarTerapias.cs",
-              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formListarTerapias.cs",
-              "RelativeToolTip": "Healing\\Views\\formListarTerapias.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwFAAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T15:06:22.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "TerapiaDetalheForm.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\TerapiaDetalheForm.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\TerapiaDetalheForm.cs",
@@ -266,12 +285,11 @@
               "RelativeToolTip": "Healing\\Views\\TerapiaDetalheForm.cs",
               "ViewState": "AQIAAJ0AAAAAAAAAAAAUwLAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:57:13.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T14:57:13.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\LoginForm.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\LoginForm.cs",
@@ -279,24 +297,22 @@
               "RelativeToolTip": "Healing\\Views\\LoginForm.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAiwE8AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:15:02.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T14:15:02.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\LoginForm.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\LoginForm.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\LoginForm.cs [Design]",
               "RelativeToolTip": "Healing\\Views\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:15:00.855Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T14:15:00.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Healing\\Controllers\\UsuarioController.cs",
@@ -304,24 +320,22 @@
               "RelativeToolTip": "Healing\\Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAUwBkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:41:08.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T14:41:08.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FormBasePadrao.cs [Design]",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\FormBasePadrao.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\FormBasePadrao.cs",
               "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\FormBasePadrao.cs [Design]",
               "RelativeToolTip": "Healing\\Views\\FormBasePadrao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:36:27.46Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-04T14:36:27.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Healing",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Healing.csproj",
               "RelativeDocumentMoniker": "Healing\\Healing.csproj",
@@ -332,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "formPrincipal.Designer.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Views\\formPrincipal.Designer.cs",
               "RelativeDocumentMoniker": "Healing\\Views\\formPrincipal.Designer.cs",
@@ -340,12 +354,11 @@
               "RelativeToolTip": "Healing\\Views\\formPrincipal.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T16:47:20.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T16:47:20.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TerapiaController.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Controllers\\TerapiaController.cs",
               "RelativeDocumentMoniker": "Healing\\Controllers\\TerapiaController.cs",
@@ -357,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "TerapiaTipoController.cs",
               "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Controllers\\TerapiaTipoController.cs",
               "RelativeDocumentMoniker": "Healing\\Controllers\\TerapiaTipoController.cs",
@@ -366,18 +379,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T16:19:00.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TerapiaConsulta.cs",
-              "DocumentMoniker": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaConsulta.cs",
-              "RelativeDocumentMoniker": "Healing\\Models\\TerapiaConsulta.cs",
-              "ToolTip": "C:\\FontesCSharp\\HealingProjectV2\\Healing\\Models\\TerapiaConsulta.cs",
-              "RelativeToolTip": "Healing\\Models\\TerapiaConsulta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:23:18.91Z"
             }
           ]
         }
